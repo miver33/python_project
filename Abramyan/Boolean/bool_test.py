@@ -28,5 +28,5 @@ print(is_five_greater_than_number_or_is_rainy)
 is_five_greater_than_number_equal_is_rainy: bool = is_rainy == is_five_greater_than_number
 print(is_five_greater_than_number_equal_is_rainy)
 # 5. Импликация a -> b = (not a) or b
-is_five_greater_than_number_then_is_rainy: bool = not is_five_greater_than_number or is_rainy
+is_five_greater_number_then_is_rainy: bool = not is_five_greater_than_number or is_rainy
 print(is_five_greater_than_number_then_is_rainy)
