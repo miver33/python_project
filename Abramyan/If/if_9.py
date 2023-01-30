@@ -2,8 +2,13 @@ a: float = float(input("enter first number "))
 b: float = float(input("enter second number "))
 
 if a < b:
-    print(a , b)
-elif a == b:
-    print(0 , 0)
+    pass
+elif a > b:
+    tmp: float = a
+    a = b
+    b = tmp
 else:
-    print(a  , b + a)
+    a = 0
+    b = 0
+
+print(a, b)
