@@ -1,10 +1,10 @@
 num: float = float(input("enter the number"))
 
-if num < 3 * (10 ** 9):
+if num < 3E9:
     print("это радиоволны")
-elif num >= 3 * (10 ** 9) and num < 3 * (10 ** 12):
+elif num >= 3E9 and num < 3E12:
     print("это микроволны")
-elif num >= 3 * (10 ** 12) and num < 4.3 * (10 ** 14):
+elif num >= 3E12 and num < 4.3E14:
     print("это инфракрасное излучение")
 elif num >= 4.3 * (10 ** 14) and num < 7.5 * (10 ** 14):
     print("это видимое излучение")

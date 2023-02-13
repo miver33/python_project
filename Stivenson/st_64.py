@@ -1,7 +1,12 @@
-p1 = 4.95
-p2 = 9.95
-p3 = 14.95
-p4 = 19.95
-p5 = 24.95
+START_PRICE: float = 4.95
+FINAL_PRICE: float = 24.95
+DISCOUNT: float = 0.6
 
-# Можем разобрать это на уроке? Не очень понял как тут сделать, смотрел в интернете, там через for только
+
+old_price: float = START_PRICE
+print("| old  |  new |")
+while old_price <= FINAL_PRICE:
+    new_price: float = old_price * (1 - DISCOUNT)
+    print(f"|{old_price:5.2f} | {new_price:5.2f}|")
+
+    old_price = old_price + 5.0

@@ -1,16 +1,19 @@
-number_of_user: int = int(input("enter the number "))
+number: int = int(input("enter the number "))
+
 sum_of_numbers: int = 0
 amount_of_numbers: int = 0
-
-while number_of_user != 0:
-    sum_of_numbers = sum_of_numbers + number_of_user
+while number != 0:
+    sum_of_numbers = sum_of_numbers + number
     amount_of_numbers = amount_of_numbers + 1
-    number_of_user: int = int(input("enter the number "))
-    average: int = sum_of_numbers // amount_of_numbers
+    number: int = int(input("enter the number "))
 
-if number_of_user == 0 and amount_of_numbers == 0:
+
+if amount_of_numbers == 0:
     print("error")
-else: print(average)
+else:
+    average: float = sum_of_numbers / amount_of_numbers
+    print(average)
+
 
 
 
