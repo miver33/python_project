@@ -25,6 +25,8 @@ print(students)
 list_3: list = [1, 2, 3, "AVC", "GJHK"]
 
 students_2: list[str] = ["Сергей", "Иван", "Егор"]
+print("Сергей" in students_2)
+print("Сергей" not in students_2)
 print(students_2)
 
 # Получение данных из списка
@@ -37,3 +39,7 @@ test: str = "test string" # str тоже упорядоченная коллек
 print(test[3])
 print(len(test))
 print(test[len(test) - 1])
+
+list_4 = [1, 2, 3, 4]
+print(4 in list_4)
+print(7 in list_4)
