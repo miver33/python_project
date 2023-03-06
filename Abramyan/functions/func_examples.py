@@ -31,7 +31,7 @@ def prod_list(numbers: list[int]) -> int:
     return result
 
 
-def get_max(numbers: list[int]) -> int:
+def find_max(numbers: list[int]) -> int:
     max_: int = numbers[0]
     i: int = 0
     while i < len(numbers):
@@ -41,7 +41,7 @@ def get_max(numbers: list[int]) -> int:
     return max_
 
 
-def get_min(numbers: list[int]) -> int:
+def find_min(numbers: list[int]) -> int:
     min_: int = numbers[0]
     i: int = 0
     while i < len(numbers):
@@ -59,5 +59,5 @@ summ: int = summ_of_list(numbers)
 print(summ)
 prod_of_list: int = prod_list(numbers)
 print(prod_of_list)
-print(get_max(numbers))
-print(get_min(numbers))
+print(find_max(numbers))
+print(find_min(numbers))
